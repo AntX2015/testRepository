@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<script>
+function PowAB (a,b) {
+	if (b==0) {
+		return 1;
+	} else return PowAB(a,b-1)*a;
+	
+};
+var a = prompt ("a");
+var b = prompt ("b");
+
+alert(PowAB(a,b));
+
+</script>

@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<script>
+	//var n=parseInt(prompt("введите число: "));
+	var N=5;
+	var a=5;
+	var b=3;
+	var c=2;
+		if ((N%a) == 0) {
+            var nRibA = N/a;
+			document.write(nRibA);
+        } else if ((N%b) == 0) {
+            var nRibB = N/b;
+			document.write(nRibB);
+        } else if ((N%c) == 0){
+			var nRibC = N/c;
+			document.write(nRibC);
+		} else if ((N%(a+b)) == 0) {
+            var nRibD = N/(a+b);
+			document.write(nRibD);
+        } else if ((N%(a+c)) == 0) {
+            var nRibE = N/(a+c);
+			document.write(nRibE);
+        } else if ((N%(c+b)) == 0) {
+            var nRibF = N/(c+b);
+			document.write(nRibF);
+        } else {
+				document.write("Лента не может быть порезана без остатка");
+		};
+//document.write(Math.max(nRibA, nRibB, nRibC, nRibD, nRibE, nRibF));
+</script>

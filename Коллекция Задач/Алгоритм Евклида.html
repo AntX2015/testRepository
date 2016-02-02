@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+<script>
+var a = prompt("Число1:");
+var b = prompt("Число2:");
+var big, small, count = 0;
+
+if (a > b){
+	big = a;
+	small = b;
+}
+	else {
+		big = b;
+		small = a;
+};
+
+do {
+	var c = big - small;
+	
+	if (c > small) {
+		big = c;
+	}
+		else  {
+			big = small;
+			small = c;
+	};
+	count++;
+} while (c != 0);
+
+
+alert(big + " " + count);
+
+
+</script> 

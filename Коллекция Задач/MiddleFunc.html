@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<script>
+	Array.prototype.sum = function(){
+	for (var i=0, sum=0; i < this.length; sum += this[i++]);
+	return sum;
+	};
+
+var arr = [55,23,45,33,56];
+var sum = 0;
+	function middleValue () {
+		for(var i=0; i < arr.length; i++){
+			sum = sum + arr[i];
+		};
+	return sum / arr.length;
+   	};
+document.write(middleValue(arr));
+document.write("<br>" + arr.sum());
+</script>

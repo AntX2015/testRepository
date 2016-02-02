@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<script>
+var a = parseInt(prompt("Введите число a:"));
+var b = parseInt(prompt("Введите число b:"));
+var c = parseInt(prompt("Введите число c:"));
+
+function max(a,b,c){
+			if (a>b && a>c) result=a;
+			if (b>a && b>c) result=b;
+			if (c>a && c>b) result=c;
+			return result;
+};
+
+function min(a,b,c){
+			if (a<b && a<c) result=a;
+			if (b<a && b<c) result=b;
+			if (c<a && c<b) result=c;
+			return result;
+};
+
+function max_min () {
+	return  max() / min();
+};
+
+alert(max_min());
+
+
+</script>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  
+  <script>
+    
+        var a = parseInt(prompt("Введите a:"));
+        if (a<10) {
+          while (a<10) {
+              alert (a);
+              a++;
+            };
+				} else {alert("a>10")};
+ 
+  </script>
+</body>
+</html>
